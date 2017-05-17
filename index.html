@@ -2,86 +2,146 @@
   <head>
     <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css" rel="stylesheet" integrity="sha384-awusxf8AUojygHf2+joICySzB780jVvQaVCAt1clU3QsyAitLGul28Qxb2r1e5g+" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!--<link href="./styles/bootswatch-variables.css" rel="stylesheet">-->
+    <link href="./styles/sidebar.css" rel="stylesheet">
     <title>Good Morning Shelly</title>
-
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+      crossorigin="anonymous">
+    </script>
+    <script src="sidebar.js"></script>
   </head>
   <body>  
 
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-4 col-md-offset-4">
-          <img src="shelly-shark.png" alt="Shelly" height="500" width="500">
+
+
+    <div id="wrapper">
+        <div class="overlay"></div>
+    
+        <!-- Sidebar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                       Morning Love
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-home"></i>Books</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-folder"></i>Blogs</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-file-o"></i>Apps</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-cog"></i>Podcasts</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#"><i class="fa fa-fw fa-cog"></i>Statistical Mechanics</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-bank"></i>Classical Mechanics</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-dropbox"></i>Quantum Field Theory</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-twitter"></i>Plasma</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+          <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas">
+            <span class="hamb-top"></span>
+            <span class="hamb-middle"></span>
+            <span class="hamb-bottom"></span>
+          </button>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">Books</div>
+                    <div class="panel-body">
+                      <div class="list-group">
+                        <a href="#" class="list-group-item">
+                          <h4 class="list-group-item-heading">The Latter-day Morning by Mark Bacera</h4>
+                        </a>
+                        <a href="https://www.google.com" class="list-group-item">
+                          <h4 class="list-group-item-heading">google</h4>
+                        </a>
+                        <a href="#" class="list-group-item">
+                          <h4 class="list-group-item-heading">The Miracle Morning by Hal Elrod</h4>
+                        </a>
+                        <a href="#" class="list-group-item">
+                          <h4 class="list-group-item-heading">Christ-Centered Meditation by Pam Blackwell</h4>
+                        </a>
+                        <a href="#" class="list-group-item">
+                          <h4 class="list-group-item-heading">The 5 Minute Journal</h4>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading">Blogs</div>
+                    <div class="panel-body">
+                      <div class="list-group">
+                        <a href="http://www.latterdaymorning.com/start-here/" class="list-group-item">
+                          <h4 class="list-group-item-heading">The Latter-day Morning Blog</h4>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading">Apps</div>
+                    <div class="panel-body">
+                      <div class="list-group">
+                        <a href="#" class="list-group-item">
+                          <h4 class="list-group-item-heading">Calm (Meditation App)</h4>
+                        </a>
+                        <a href="#" class="list-group-item">
+                          <h4 class="list-group-item-heading">Sleep Cycle</h4>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading">Podcasts</div>
+                    <div class="panel-body">
+                      <div class="list-group">
+                        <a href="#" class="list-group-item">
+                          <h4 class="list-group-item-heading">Bold New Mom (Jody Moore)</h4>
+                        </a>
+                        <a href="#" class="list-group-item">
+                          <h4 class="list-group-item-heading">Achieve Your Goals with Hal Elrod</h4>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
-      </div>
+        <!-- /#page-content-wrapper -->
+
     </div>
+    <!-- /#wrapper -->
 
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-          <div class="panel panel-default">
-            <div class="panel-heading">Books</div>
-            <div class="panel-body">
-              <div class="list-group">
-                <a href="#" class="list-group-item">
-                  <h4 class="list-group-item-heading">The Latter-day Morning by Mark Bacera</h4>
-                </a>
-                <a href="https://www.google.com" class="list-group-item">
-                  <h4 class="list-group-item-heading">google</h4>
-                </a>
-                <a href="#" class="list-group-item">
-                  <h4 class="list-group-item-heading">The Miracle Morning by Hal Elrod</h4>
-                </a>
-                <a href="#" class="list-group-item">
-                  <h4 class="list-group-item-heading">Christ-Centered Meditation by Pam Blackwell</h4>
-                </a>
-                <a href="#" class="list-group-item">
-                  <h4 class="list-group-item-heading">The 5 Minute Journal</h4>
-                </a>
-              </div>
-            </div>
-          </div>
 
-          <div class="panel panel-default">
-            <div class="panel-heading">Blogs</div>
-            <div class="panel-body">
-              <div class="list-group">
-                <a href="http://www.latterdaymorning.com/start-here/" class="list-group-item">
-                  <h4 class="list-group-item-heading">The Latter-day Morning Blog</h4>
-                </a>
-              </div>
-            </div>
-          </div>
 
-          <div class="panel panel-default">
-            <div class="panel-heading">Apps</div>
-            <div class="panel-body">
-              <div class="list-group">
-                <a href="#" class="list-group-item">
-                  <h4 class="list-group-item-heading">Calm (Meditation App)</h4>
-                </a>
-                <a href="#" class="list-group-item">
-                  <h4 class="list-group-item-heading">Sleep Cycle</h4>
-                </a>
-              </div>
-            </div>
-          </div>
 
-          <div class="panel panel-default">
-            <div class="panel-heading">Podcasts</div>
-            <div class="panel-body">
-              <div class="list-group">
-                <a href="#" class="list-group-item">
-                  <h4 class="list-group-item-heading">Bold New Mom (Jody Moore)</h4>
-                </a>
-                <a href="#" class="list-group-item">
-                  <h4 class="list-group-item-heading">Achieve Your Goals with Hal Elrod</h4>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+
+
+
+            
 
           
 
